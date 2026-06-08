@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojinha da Alice | Melhores Achados e Promoções</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFBFF;
+        }
+        h1, h2, h3 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 133, 161, 0.1);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 25px -5px rgba(255, 133, 161, 0.1), 0 8px 10px -6px rgba(255, 133, 161, 0.05);
+        }
+        .bg-soft-pink { background-color: #FFF0F3; }
+        .text-alice-pink { color: #FF85A1; }
+        .bg-alice-pink { background-color: #FF85A1; }
+        .bg-alice-lilac { background-color: #A78BFA; }
+        
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: translateY(-5px); }
+
+        /* Animação suave de entrada */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in { animation: fadeIn 0.8s ease-out forwards; }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Navegação -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-alice-pink rounded-full flex items-center justify-center text-white">
+                        <i data-lucide="sparkles" class="w-5 h-5"></i>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-slate-900">Lojinha da <span class="text-alice-pink">Alice</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#categorias" class="hover:text-alice-pink transition">Categorias</a>
+                    <a href="#ofertas" class="hover:text-alice-pink transition">Ofertas</a>
+                    <a href="#como-funciona" class="hover:text-alice-pink transition">Como Funciona</a>
+                </div>
+                <a href="#grupo-vip" class="bg-alice-pink text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-opacity-90 transition card-shadow">
+                    Grupo VIP
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 animate-fade-in">
+                <span class="inline-block px-4 py-1 bg-soft-pink text-alice-pink rounded-full text-xs font-bold uppercase tracking-widest mb-4">Curadoria Especializada</span>
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight text-slate-900 mb-6">
+                    Os Melhores Achados da <span class="text-alice-pink underline decoration-pink-200">Internet ✨</span>
+                </h1>
+                <p class="text-lg text-slate-600 mb-8 max-w-lg leading-relaxed">
+                    Produtos incríveis, promoções imperdíveis e recomendações selecionadas especialmente para você economizar com estilo.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#ofertas" class="bg-alice-pink text-white px-8 py-4 rounded-2xl font-bold text-lg hover:scale-105 transition shadow-lg shadow-pink-200 flex items-center gap-2">
+                        Ver Achados <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="bg-white border-2 border-slate-100 text-slate-700 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-slate-50 transition flex items-center gap-2">
+                        <i data-lucide="message-circle" class="w-5 h-5 text-green-500"></i> Grupo de Promoções
+                    </a>
+                </div>
+            </div>
+            <div class="flex-1 relative animate-fade-in" style="animation-delay: 0.2s;">
+                <div class="absolute -z-10 inset-0 bg-gradient-to-tr from-pink-100 to-purple-100 rounded-full blur-3xl opacity-60"></div>
+                <!-- Representação da Alice/Shopping -->
+                <img src="https://illustrations.popsy.co/pink/online-shopping.svg" alt="Alice Shopping" class="w-full max-w-md mx-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorias -->
+    <section id="categorias" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-center">Navegue por Categorias</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
+                <!-- Categoria Card -->
+                <a href="#" class="flex flex-col items-center p-4 rounded-2xl bg-soft-pink hover:bg-pink-100 transition group">
+                    <i data-lucide="home" class="w-6 h-6 text-alice-pink mb-2 group-hover:scale-110 transition"></i>
+                    <span class="text-xs font-semibold text-slate-700">Casa</span>
+                </a>
+                <a href="#" class="flex flex-col items-center p-4 rounded-2xl bg-indigo-50 hover:bg-indigo-100 transition group">
+                    <i data-lucide="smartphone" class="w-6 h-6 text-indigo-500 mb-2 group-hover:scale-110 transition"></i>
+                    <span class="text-xs font-semibold text-slate-700">Tecnologia</span>
+                </a>
+                <a href="#" class="flex flex-col items-center p-4 rounded-2xl bg-purple-50 hover:bg-purple-100 transition group">
+                    <i data-lucide="sparkles" class="w-6 h-6 text-purple-500 mb-2 group-hover:scale-110 transition"></i>
+                    <span class="text-xs font-semibold text-slate-700">Beleza</span>
+                </a>
+                <a href="#" class="flex flex-col items-center p-4 rounded-2xl bg-orange-50 hover:bg-orange-100 transition group">
+                    <i data-lucide="shirt" class="w-6 h-6 text-orange-500 mb-2 group-hover:scale-110 transition"></i>
+                    <span class="text-xs font-semibold text-slate-700">Moda</span>
+                </a>
+                <a href="#" class="flex flex-col items-center p-4 rounded-2xl bg-teal-50 hover:bg-teal-100 transition group">
+                    <i data-lucide="palette" class="w-6 h-6 text-teal-500 mb-2 group-hover:scale-110 transition"></i>
+                    <span class="text-xs font-semibold text-slate-700">Decoração</span>
+                </a>
+                <a href="#" class="flex flex-col items-center p-4 rounded-2xl bg-yellow-50 hover:bg-yellow-100 transition group">
+                    <i data-lucide="utensils" class="w-6 h-6 text-yellow-600 mb-2 group-hover:scale-110 transition"></i>
+                    <span class="text-xs font-semibold text-slate-700">Cozinha</span>
+                </a>
+                <a href="#" class="flex flex-col items-center p-4 rounded-2xl bg-blue-50 hover:bg-blue-100 transition group">
+                    <i data-lucide="box" class="w-6 h-6 text-blue-500 mb-2 group-hover:scale-110 transition"></i>
+                    <span class="text-xs font-semibold text-slate-700">Utilidades</span>
+                </a>
+                <a href="#" class="flex flex-col items-center p-4 rounded-2xl bg-red-50 hover:bg-red-100 transition group">
+                    <i data-lucide="zap" class="w-6 h-6 text-red-500 mb-2 group-hover:scale-110 transition"></i>
+                    <span class="text-xs font-semibold text-slate-700">Ofertas</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos em Destaque -->
+    <section id="ofertas" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-2">Achados do Dia</h2>
+                    <p class="text-slate-500">As melhores ofertas que acabaram de sair do forno.</p>
+                </div>
+                <button class="text-alice-pink font-semibold flex items-center gap-1 hover:underline">
+                    Ver todos <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </button>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card de Produto -->
+                <div class="bg-white rounded-3xl p-4 card-shadow hover-scale relative border border-slate-50">
+                    <div class="absolute top-6 left-6 z-10">
+                        <span class="bg-red-500 text-white text-[10px] font-bold px-2 py-1 rounded-lg uppercase tracking-wider shadow-sm">🔥 Oferta Relâmpago</span>
+                    </div>
+                    <div class="aspect-square bg-slate-50 rounded-2xl mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=400" alt="Produto" class="w-full h-full object-cover">
+                    </div>
+                    <div class="px-2">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Amazon</span>
+                        <h3 class="font-bold text-slate-800 mb-2 line-clamp-2">Relógio Minimalista Rose Gold Edition</h3>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="text-xl font-bold text-slate-900 font-jakarta">R$ 189,90</span>
+                            <span class="text-sm text-slate-400 line-through italic">R$ 349,00</span>
+                            <span class="text-xs font-bold text-green-500">-45%</span>
+                        </div>
+                        <a href="#" class="block w-full text-center bg-slate-900 text-white py-3 rounded-xl font-bold hover:bg-alice-pink transition">Ver Oferta</a>
+                    </div>
+                </div>
+
+                <!-- Card de Produto 2 -->
+                <div class="bg-white rounded-3xl p-4 card-shadow hover-scale relative border border-slate-50">
+                    <div class="absolute top-6 left-6 z-10">
+                        <span class="bg-alice-lilac text-white text-[10px] font-bold px-2 py-1 rounded-lg uppercase tracking-wider shadow-sm">⭐ Recomendado</span>
+                    </div>
+                    <div class="aspect-square bg-slate-50 rounded-2xl mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&q=80&w=400" alt="Produto" class="w-full h-full object-cover">
+                    </div>
+                    <div class="px-2">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Mercado Livre</span>
+                        <h3 class="font-bold text-slate-800 mb-2 line-clamp-2">Tablet de Estudo 2024 + Caneta</h3>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="text-xl font-bold text-slate-900 font-jakarta">R$ 1.250,00</span>
+                            <span class="text-sm text-slate-400 line-through">R$ 1.500</span>
+                        </div>
+                        <a href="#" class="block w-full text-center bg-slate-900 text-white py-3 rounded-xl font-bold hover:bg-alice-pink transition">Ver Oferta</a>
+                    </div>
+                </div>
+
+                <!-- Card de Produto 3 -->
+                <div class="bg-white rounded-3xl p-4 card-shadow hover-scale relative border border-slate-50">
+                    <div class="absolute top-6 left-6 z-10">
+                        <span class="bg-pink-400 text-white text-[10px] font-bold px-2 py-1 rounded-lg uppercase tracking-wider shadow-sm">💖 Mais Vendido</span>
+                    </div>
+                    <div class="aspect-square bg-slate-50 rounded-2xl mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&q=80&w=400" alt="Produto" class="w-full h-full object-cover">
+                    </div>
+                    <div class="px-2">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Shopee</span>
+                        <h3 class="font-bold text-slate-800 mb-2 line-clamp-2">Kit de Skincare Coreano (5 passos)</h3>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="text-xl font-bold text-slate-900 font-jakarta">R$ 89,90</span>
+                            <span class="text-xs font-bold text-green-500">Frete Grátis</span>
+                        </div>
+                        <a href="#" class="block w-full text-center bg-slate-900 text-white py-3 rounded-xl font-bold hover:bg-alice-pink transition">Ver Oferta</a>
+                    </div>
+                </div>
+
+                <!-- Card de Produto 4 -->
+                <div class="bg-white rounded-3xl p-4 card-shadow hover-scale relative border border-slate-50">
+                    <div class="absolute top-6 left-6 z-10">
+                        <span class="bg-blue-400 text-white text-[10px] font-bold px-2 py-1 rounded-lg uppercase tracking-wider shadow-sm">🎁 Melhor Custo</span>
+                    </div>
+                    <div class="aspect-square bg-slate-50 rounded-2xl mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1616489953149-864c20f1e002?auto=format&fit=crop&q=80&w=400" alt="Produto" class="w-full h-full object-cover">
+                    </div>
+                    <div class="px-2">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Magalu</span>
+                        <h3 class="font-bold text-slate-800 mb-2 line-clamp-2">Luminária Minimalista de Madeira</h3>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="text-xl font-bold text-slate-900 font-jakarta">R$ 45,00</span>
+                        </div>
+                        <a href="#" class="block w-full text-center bg-slate-900 text-white py-3 rounded-xl font-bold hover:bg-alice-pink transition">Ver Oferta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section id="como-funciona" class="py-20 bg-soft-pink">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Comprar com a Alice é simples!</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm">
+                        <i data-lucide="search" class="w-8 h-8 text-alice-pink"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Alice garimpa</h3>
+                    <p class="text-slate-600">Eu vasculho a internet atrás de ofertas reais e produtos que valem a pena.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm">
+                        <i data-lucide="share-2" class="w-8 h-8 text-alice-pink"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Compartilha aqui</h3>
+                    <p class="text-slate-600">Posto os links direto das lojas oficiais (Amazon, Magalu, etc) com segurança.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm">
+                        <i data-lucide="shopping-bag" class="w-8 h-8 text-alice-pink"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Você economiza</h3>
+                    <p class="text-slate-600">Você compra direto na loja parceira pelo menor preço do mercado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grupo VIP CTA -->
+    <section id="grupo-vip" class="py-20 px-4">
+        <div class="max-w-5xl mx-auto bg-slate-900 rounded-[3rem] p-8 md:p-16 overflow-hidden relative shadow-2xl">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-alice-pink opacity-20 rounded-full blur-3xl -mr-20 -mt-20"></div>
+            <div class="relative z-10 flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1 text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">Receba ofertas em primeira mão no seu celular! 📱</h2>
+                    <p class="text-slate-300 text-lg mb-8">Nossos grupos de WhatsApp e Telegram recebem promoções exclusivas e bugs de preço antes de todo mundo.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#" class="bg-green-500 text-white px-8 py-4 rounded-2xl font-bold hover:bg-green-600 transition flex items-center justify-center gap-2">
+                            <i data-lucide="message-circle" class="w-6 h-6"></i> WhatsApp VIP
+                        </a>
+                        <a href="#" class="bg-sky-500 text-white px-8 py-4 rounded-2xl font-bold hover:bg-sky-600 transition flex items-center justify-center gap-2">
+                            <i data-lucide="send" class="w-6 h-6"></i> Telegram Canal
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-1 flex justify-center">
+                    <div class="bg-white/10 p-4 rounded-3xl backdrop-blur-md">
+                        <img src="https://illustrations.popsy.co/pink/communication.svg" alt="Grupo VIP" class="w-48 md:w-64">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="py-20 bg-white px-4">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-16 italic">"O que dizem as amigas da Alice"</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 italic">
+                    <p class="text-slate-600 mb-6">"Sempre que preciso comprar algo pra casa, venho primeiro na Alice. Economizei mais de 300 reais no meu jogo de panelas!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-pink-200"></div>
+                        <span class="font-bold text-slate-800">Mariana S.</span>
+                    </div>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 italic">
+                    <p class="text-slate-600 mb-6">"Os links são super seguros e os produtos são de ótima qualidade. A curadoria da Alice é impecável!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-200"></div>
+                        <span class="font-bold text-slate-800">Beatriz F.</span>
+                    </div>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 italic">
+                    <p class="text-slate-600 mb-6">"O grupo de ofertas é viciante! Já comprei vários mimos que nem sabia que precisava, tudo com precinho Mara."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-teal-200"></div>
+                        <span class="font-bold text-slate-800">Carla M.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center gap-2 mb-6">
+                    <div class="w-8 h-8 bg-alice-pink rounded-full flex items-center justify-center text-white">
+                        <i data-lucide="sparkles" class="w-5 h-5"></i>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-slate-900">Lojinha da <span class="text-alice-pink">Alice</span></span>
+                </div>
+                <p class="text-slate-500 max-w-sm mb-6 leading-relaxed">
+                    Minha missão é ajudar você a encontrar os melhores produtos com os melhores preços, com a confiança de quem realmente entende de achados online.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 hover:bg-alice-pink hover:text-white transition italic font-serif font-bold">i</a>
+                    <a href="#" class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 hover:bg-alice-pink hover:text-white transition italic font-serif font-bold">t</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 text-slate-900 uppercase text-xs tracking-widest">Institucional</h4>
+                <ul class="space-y-4 text-slate-500 text-sm">
+                    <li><a href="#" class="hover:text-alice-pink transition">Sobre a Alice</a></li>
+                    <li><a href="#" class="hover:text-alice-pink transition">Como funcionam os links</a></li>
+                    <li><a href="#" class="hover:text-alice-pink transition">Política de Privacidade</a></li>
+                    <li><a href="#" class="hover:text-alice-pink transition">Termos de Uso</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 text-slate-900 uppercase text-xs tracking-widest">Contato</h4>
+                <ul class="space-y-4 text-slate-500 text-sm">
+                    <li><a href="#" class="hover:text-alice-pink transition">Parcerias</a></li>
+                    <li><a href="#" class="hover:text-alice-pink transition">Suporte</a></li>
+                    <li><a href="mailto:contato@lojinhadaalice.com.br" class="hover:text-alice-pink transition underline">contato@lojinhadaalice.com.br</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-16 pt-8 border-t border-slate-50 text-center text-slate-400 text-xs">
+            © 2024 Lojinha da Alice. Todos os direitos reservados. Alguns links podem gerar comissão para o site.
+        </div>
+    </footer>
+
+    <script>
+        // Inicializar os ícones do Lucide
+        lucide.createIcons();
+
+        // Smooth scroll para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
